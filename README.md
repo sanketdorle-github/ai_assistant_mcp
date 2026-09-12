@@ -8,11 +8,11 @@ email), short-term (per-thread) and long-term (cross-thread) memory, and a
 real Gmail integration (search/read/draft/send).
 
 ```
-┌─────────────────┐      REST + SSE       ┌──────────────────────┐
-│  mcp_frontend    │ ────────────────────▶ │   mcp_project         │
-│  Vite + React    │ ◀──────────────────── │   FastAPI backend      │
-│  :5173           │                        │   :8000                │
-└─────────────────┘                        └──────┬────────┬────────┘
+┌─────────────────┐      REST + SSE        ┌─────────────────────────┐
+│  mcp_frontend   │ ────────────────────▶ │   mcp_project           │
+│  Vite + React   │ ◀──────────────────── │   FastAPI backend       │
+│  :5173          │                        │   :8000                 │
+└─────────────────┘                        └──────┬────────┬─────────┘
                                                     │        │
                                        stdio (MCP)  │        │  LangGraph agent
                                      ┌──────────────┘        └───────────────┐
