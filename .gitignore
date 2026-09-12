@@ -1,0 +1,28 @@
+# --- Python (mcp_project/) ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.python-version
+.claude 
+# Real env files — never commit secrets. Keep .env.example tracked.
+.env
+.env.*.local
+
+mcp_project/logs/
+mcp_project/gcp-oauth.keys.json
+
+# --- Node (mcp_frontend/) ---
+node_modules/
+dist/
+mcp_frontend/*.zip
+
+# --- Local Claude Code settings ---
+.claude/settings.local.json
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

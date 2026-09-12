@@ -1,0 +1,1 @@
+"""MCP Orchestration application package."""
